@@ -1,0 +1,71 @@
+
+
+============================== 2023-01-18 05:38:41.548205 | c69ca313-6f32-47f7-9db3-2e48ce28975f ==============================
+[0m05:38:41.548205 [info ] [MainThread]: Running with dbt=1.3.2
+[0m05:38:41.551284 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ADMIN\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'learn_dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m05:38:41.552211 [debug] [MainThread]: Tracking: tracking
+[0m05:38:41.812490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257492B1240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257492B11E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257492B10C0>]}
+[0m05:38:41.813529 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ADMIN\.dbt
+[0m05:38:41.818497 [debug] [MainThread]: Starter project path: C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m05:43:05.295120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025749E8C460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025749E8E7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025749E8CAC0>]}
+[0m05:43:05.295793 [debug] [MainThread]: Flushing usage events
+[0m05:43:06.647442 [error] [MainThread]: Encountered an error:
+
+[0m05:43:06.662193 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 245, in run_from_args
+    results = task.run()
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 332, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 207, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 191, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 157, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-01-18 05:43:27.570907 | 52469951-46ab-483b-adfc-ea20523786a8 ==============================
+[0m05:43:27.570907 [info ] [MainThread]: Running with dbt=1.3.2
+[0m05:43:27.571705 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ADMIN\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'learn_dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m05:43:27.571705 [debug] [MainThread]: Tracking: tracking
+[0m05:43:27.622696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B1240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B11E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B10C0>]}
+[0m05:43:27.624488 [info ] [MainThread]: A project called learn_dbt already exists here.
+[0m05:43:27.625486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B1000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B0DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172319B1240>]}
+[0m05:43:27.625486 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-18 05:44:38.539166 | 486a3f84-e05d-4ed6-96ec-dd3131ea920b ==============================
+[0m05:44:38.539166 [info ] [MainThread]: Running with dbt=1.3.2
+[0m05:44:38.540495 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ADMIN\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'learning_dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m05:44:38.540495 [debug] [MainThread]: Tracking: tracking
+[0m05:44:38.589865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B11B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B1150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B1030>]}
+[0m05:44:38.590901 [debug] [MainThread]: Starter project path: C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m05:49:46.368897 [info ] [MainThread]: Profile learning_dbt written to C:\Users\ADMIN\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m05:49:46.371901 [info ] [MainThread]: 
+Your new dbt project "learning_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:49:46.377169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B10F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B0FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B157B0D90>]}
+[0m05:49:46.378172 [debug] [MainThread]: Flushing usage events
